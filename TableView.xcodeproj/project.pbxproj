@@ -66,7 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				A36996F127421C0300D0EDC5 /* Configs */,
-				A36996F227421C0E00D0EDC5 /* Storyboards */,
 				A36996E5274219A700D0EDC5 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -76,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				A36996EA274219A700D0EDC5 /* Info.plist */,
+				A36996F227421C0E00D0EDC5 /* Storyboards */,
 			);
 			path = Configs;
 			sourceTree = "<group>";

@@ -16,4 +16,12 @@ final class TableViewCell: UITableViewCell {
     required init?(coder aDecoder: NSCoder) {
            fatalError("init(coder:) has not been implemented")
        }
+    
+    //Боремся с переиспользованием ячеек
+    override func prepareForReuse() {
+            super.prepareForReuse()
+            self.accessoryType = .none
+            self.accessoryView = .none
+            self.detailTextLabel?.text = .none
+        }
 }
