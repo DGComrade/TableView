@@ -13,6 +13,8 @@
 		A36996E6274219A700D0EDC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A36996E5274219A700D0EDC5 /* Assets.xcassets */; };
 		A36996E9274219A700D0EDC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A36996E7274219A700D0EDC5 /* LaunchScreen.storyboard */; };
 		A36996F92742206D00D0EDC5 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36996F82742206D00D0EDC5 /* TableViewCell.swift */; };
+		A3F0BC4127451F6800548F21 /* ModelStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F0BC4027451F6800548F21 /* ModelStructure.swift */; };
+		A3F0BC4327451F9F00548F21 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F0BC4227451F9F00548F21 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A36996E8274219A700D0EDC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A36996EA274219A700D0EDC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A36996F82742206D00D0EDC5 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		A3F0BC4027451F6800548F21 /* ModelStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelStructure.swift; sourceTree = "<group>"; };
+		A3F0BC4227451F9F00548F21 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +44,7 @@
 		A36996D0274219A600D0EDC5 = {
 			isa = PBXGroup;
 			children = (
-				A36996DB274219A600D0EDC5 /* TableView */,
+				A36996DB274219A600D0EDC5 /* MVCSettingsTableView */,
 				A36996DA274219A600D0EDC5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,13 +57,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A36996DB274219A600D0EDC5 /* TableView */ = {
+		A36996DB274219A600D0EDC5 /* MVCSettingsTableView */ = {
 			isa = PBXGroup;
 			children = (
 				A36996F027421BED00D0EDC5 /* Resources */,
 				A36996F327421C3100D0EDC5 /* Sources */,
 			);
-			path = TableView;
+			path = MVCSettingsTableView;
 			sourceTree = "<group>";
 		};
 		A36996F027421BED00D0EDC5 /* Resources */ = {
@@ -109,10 +113,20 @@
 		A36996F527421C5900D0EDC5 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				A3F4772227451A4C00B587F1 /* TableViewModel */,
 				A36996E0274219A600D0EDC5 /* ViewController.swift */,
 				A36996F82742206D00D0EDC5 /* TableViewCell.swift */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A3F4772227451A4C00B587F1 /* TableViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A3F0BC4027451F6800548F21 /* ModelStructure.swift */,
+				A3F0BC4227451F9F00548F21 /* Model.swift */,
+			);
+			path = TableViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +163,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A36996D4274219A600D0EDC5 /* Build configuration list for PBXProject "TableView" */;
+			buildConfigurationList = A36996D4274219A600D0EDC5 /* Build configuration list for PBXProject "MVCSettingsTableView" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -185,7 +199,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3F0BC4327451F9F00548F21 /* Model.swift in Sources */,
 				A36996F92742206D00D0EDC5 /* TableViewCell.swift in Sources */,
+				A3F0BC4127451F6800548F21 /* ModelStructure.swift in Sources */,
 				A36996E1274219A600D0EDC5 /* ViewController.swift in Sources */,
 				A36996DD274219A600D0EDC5 /* AppDelegate.swift in Sources */,
 			);
@@ -335,12 +351,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TableView/Resources/Configs/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MVCSettingsTableView/Resources/Configs/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.my.TableView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.my.TableViewMVC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -353,12 +369,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TableView/Resources/Configs/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MVCSettingsTableView/Resources/Configs/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.my.TableView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.my.TableViewMVC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -368,7 +384,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A36996D4274219A600D0EDC5 /* Build configuration list for PBXProject "TableView" */ = {
+		A36996D4274219A600D0EDC5 /* Build configuration list for PBXProject "MVCSettingsTableView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A36996EB274219A700D0EDC5 /* Debug */,
